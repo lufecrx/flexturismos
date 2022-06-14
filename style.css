@@ -16,7 +16,7 @@ ul li a {
 }
 
 div img {
-    display: block;
+    display: flex;
     width: 100%;
 }
 
@@ -265,8 +265,23 @@ footer .footer {
 
 /* área mobile */
 @media(max-width: 992px) {
+
     .flex-container {
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .pagePresentation img {
+        margin-top: 90px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+    }
+    
+    .btn{
+        margin: auto;
+        margin-top: 10px;
     }
 
     .pagePresentation {
@@ -308,4 +323,5 @@ footer .footer {
         width: 100%;
         margin-bottom: 20px;
     }
+
 }
